@@ -20,7 +20,7 @@ int main(){
 		
 		cout << "To process application type <RUN>" << endl;
 		cout << "To exit type <QUIT>" << endl;
-		getline(cin, menu);
+		cin >> menu;
 		
 		
 		if(menu == "RUN"){
@@ -57,7 +57,7 @@ int main(){
 				
 				cout << "The largest number of square meters will be given by the combination of a=" << resoults[0] << " and b=" << resoults[1] << endl;
 				cout << "The maximum number of square meters is " << Square << endl;
-				
+				cout << "-----------------------------------------------------------" << endl;
 			} else{
 				system("cls");
 				cout << "Input is not a number" << endl;
@@ -66,7 +66,7 @@ int main(){
 		} else if(menu == "QUIT"){
 			R = false;
 			
-		} else if(menu != "RUN" || "QUIT"){
+		} else{
 			system("cls");
 			cout << "Wrong order" << endl;
 		}
