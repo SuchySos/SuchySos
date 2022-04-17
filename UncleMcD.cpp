@@ -22,7 +22,6 @@ int main(){
 		cout << "To exit type <QUIT>" << endl;
 		cin >> menu;
 		
-		
 		if(menu == "RUN"){
 			
 			system("cls");
